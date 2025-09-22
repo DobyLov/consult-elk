@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Frédéric « Dobylove » Bodo — Expert ELK</title>
+  <meta name="description" content="Consultant freelance spécialisé ELK (Elasticsearch, Logstash, Kibana) & Observabilité : conseil, formation, architecture, performance, MCO.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/styles.css" as="style">
+  <link rel="stylesheet" href="assets/styles.css">
+  <meta name="theme-color" content="#F7F8FB" id="meta-theme-color">
+</head>
+<body>
+<header class="header">
+  <div class="container inner">
+    <div class="brand"><img src="assets/favicon.svg" alt="" aria-hidden="true"><span>Dobylove • ELK</span></div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#training">Formations</a>
+      <a href="#tech">Technologies</a>
+      <a href="#about">À propos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" data-theme-toggle aria-pressed="false" title="Passer en thème sombre">🌗</button>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <h1>ELK en prapra, <span style="background:linear-gradient(90deg,var(--primary),var(--secondary));-webkit-background-clip:text;background-clip:text;color:transparent">sans mauvaise surprise</span></h1>
+    <p class="sub">Je conçois et opère des plateformes <strong>Elasticsearch / Logstash / Kibana</strong> robustes : performance, sécurité, coût et disponibilité alignés sur vos SLO.</p>
+    <div style="display:flex;gap:.6rem;flex-wrap:wrap">
+      <span class="badge">Elasticsearch</span><span class="badge">Logstash</span><span class="badge">Kibana</span>
+      <span class="badge">Beats</span><span class="badge">Kafka (KRaft)</span><span class="badge">Docker / K8s</span><span class="badge">GitLab CI/CD</span>
+    </div>
+    <div style="margin-top:1rem;display:flex;gap:.8rem;flex-wrap:wrap">
+      <a class="button" href="#contact">Demander un devis</a>
+      <a class="button ghost" href="#services">Voir les services</a>
+    </div>
+    <div class="kpis">
+      <div class="kpi"><strong>10+ ans</strong><span>ELK / Obs</span></div>
+      <div class="kpi"><strong>70+ projets</strong><span>audit → prod</span></div>
+      <div class="kpi"><strong>48% ↓</strong><span>incidents après refonte*</span></div>
+      <div class="kpi"><strong>24/7</strong><span>MCO & run</span></div>
+    </div>
+    <p class="sub">*ex. plateforme d’imagerie médicale : ILM hot/warm, snapshots S3, SSO/RBAC.</p>
+  </section>
+
+  <section id="services" class="grid cols-2">
+    <article class="card">
+      <h2>Conseil / Production</h2>
+      <p class="sub">Cadrage, architecture, implémentation, MCO.</p>
+      <ul class="list">
+        <li>Audit santé & recommandations (perf, coûts, sécurité)</li>
+        <li>ILM (rollover) & tiering (hot/warm/cold)</li>
+        <li>Ingestion Kafka→Logstash (ACKs, DLQ), Beats</li>
+        <li>Mappings / analyzers, relevancy & tuning requêtes</li>
+        <li>SSO / RBAC, TLS, snapshots S3</li>
+        <li>Upgrades 7→8, zéro‑downtime, runbooks</li>
+      </ul>
+      <div class="notice">Offres: ⚡ Kickstart 5j • 🛟 Rescue/Upgrade • 🎯 Perf Boost • 👩‍🏫 Coaching</div>
+    </article>
+    <article id="training" class="card">
+      <h2>Formations (2 à 4 jours)</h2>
+      <p class="sub">Intra / distanciel, ateliers pratiques, adaptés à votre prod.</p>
+      <ul class="list">
+        <li>Elasticsearch : requêtes, agrégations, mapping & indexation</li>
+        <li>Administration & exploitation (ILM, SLM, sécurité)</li>
+        <li>ELK / observabilité : logs, metrics, APM, alerting</li>
+        <li>Kibana : Lens, Canvas, dashboards, Spaces</li>
+      </ul>
+      <a class="button" href="#contact">Recevoir le programme</a>
+    </article>
+  </section>
+
+  <section id="tech" class="card" style="margin-top:1rem">
+    <h2>Technologies & pratiques</h2>
+    <div class="split">
+      <div>
+        <h3>ELK & ingestion</h3>
+        <ul class="list">
+          <li>Logstash (grok/dissect, enrich, ECS), Ingest Pipeline</li>
+          <li>Kafka KRaft, partitionnement, acks, retries, DLQ</li>
+          <li>Observabilité des flux, traçabilité, tests de schéma</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Ops & fiabilité</h3>
+        <ul class="list">
+          <li>HA, sizing, GC/heap, circuit breakers</li>
+          <li>ILM/rollover, time‑series (TSDS), routing</li>
+          <li>CI/CD: GitLab, Terraform/Ansible, tests automatisés</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="grid cols-2" style="margin-top:1rem">
+    <article class="card">
+      <h2>À propos</h2>
+      <p>Je travaille sur des plateformes ELK à forte volumétrie (santé, industrie, IoT). J’interviens sur le <em>build</em> et le <em>run</em> avec une approche “production‑first”.</p>
+      <ul class="list">
+        <li>Environnements : on‑prem, cloud, Kubernetes</li>
+        <li>Langues : français / anglais</li>
+        <li>Régie ou forfait • NDA</li>
+      </ul>
+    </article>
+    <aside class="card">
+      <h2>Réalisations (exemples)</h2>
+      <ul class="list">
+        <li>Observabilité multi‑sites (santé) — incidents ↓48%, latence ↓60%</li>
+        <li>Indexation IoT (30B+ docs) — mapping & templates optimisés</li>
+        <li>Upgrades 7→8 — zero‑downtime, SSO/RBAC, S3 snapshots</li>
+      </ul>
+    </aside>
+  </section>
+
+  <section id="contact" class="grid cols-2" style="margin:1rem 0 2rem">
+    <form id="contact-form" class="card" method="POST" action="#">
+      <h2>Contact</h2>
+      <p class="sub">Décrivez votre contexte : volumétrie, environnement, objectifs. Réponse sous 24h ouvrées.</p>
+      <label>Nom<input name="name" required></label>
+      <label>Email<input type="email" name="email" required></label>
+      <label>Message<textarea name="message" rows="6" required></textarea></label>
+      <div class="success notice" style="display:none">Merci, c’est bien envoyé (simulation). Branchez Formspree pour l’envoi réel.</div>
+      <button class="button" type="submit">Envoyer</button>
+      <p class="sub">Ou écrivez‑moi à <strong>[votre.email@exemple.com]</strong> • LinkedIn : <strong>[lien]</strong></p>
+    </form>
+    <aside class="card">
+      <h2>Infos</h2>
+      <ul class="list">
+        <li>📍 Île‑de‑France • interventions Europe & remote</li>
+        <li>🗓 Disponibilités sur devis</li>
+        <li>🧾 Facturation : régie / forfait</li>
+        <li>🔐 Sécurité & conformité (TLS, SSO, RBAC)</li>
+      </ul>
+      <h3>Checklist projet</h3>
+      <ul class="list">
+        <li>EPS / volume / rétention</li>
+        <li>Environnement (on‑prem / cloud / K8s)</li>
+        <li>SLO & contraintes sécurité</li>
+        <li>Livrables (docs, runbooks, formation)</li>
+      </ul>
+    </aside>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div>© 2025 Frédéric « Dobylove » Bodo • Consultant ELK</div>
+    <div><a href="#contact">Demander un devis</a></div>
+  </div>
+</footer>
+
+<script src="assets/script.js" defer></script>
+</body>
+</html>
