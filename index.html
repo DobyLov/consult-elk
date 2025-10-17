@@ -1,157 +1,258 @@
-<!doctype html>
-<html lang="fr" data-theme="light">
+<!DOCTYPE html>
+<html lang="fr">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Frédéric « Dobylove » Bodo — Expert ELK</title>
-  <meta name="description" content="Consultant freelance spécialisé ELK (Elasticsearch, Logstash, Kibana) & Observabilité : conseil, formation, architecture, performance, MCO.">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="preload" href="assets/styles.css" as="style">
-  <link rel="stylesheet" href="assets/styles.css">
-  <meta name="theme-color" content="#F7F8FB" id="meta-theme-color">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consultant Elasticsearch Expert</title>
+  <link rel="icon" href="icons/favicon.ico" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-<header class="header">
-  <div class="container inner">
-    <div class="brand"><img src="assets/favicon.svg" alt="" aria-hidden="true"><span>Dobylove • ELK</span></div>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#training">Formations</a>
-      <a href="#tech">Technologies</a>
-      <a href="#about">À propos</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <button class="theme-toggle" data-theme-toggle aria-pressed="false" title="Passer en thème sombre">🌗</button>
-  </div>
-</header>
-
-<main class="container">
-  <section class="hero">
-    <h1>ELK en prapra, <span style="background:linear-gradient(90deg,var(--primary),var(--secondary));-webkit-background-clip:text;background-clip:text;color:transparent">sans mauvaise surprise</span></h1>
-    <p class="sub">Je conçois et opère des plateformes <strong>Elasticsearch / Logstash / Kibana</strong> robustes : performance, sécurité, coût et disponibilité alignés sur vos SLO.</p>
-    <div style="display:flex;gap:.6rem;flex-wrap:wrap">
-      <span class="badge">Elasticsearch</span><span class="badge">Logstash</span><span class="badge">Kibana</span>
-      <span class="badge">Beats</span><span class="badge">Kafka (KRaft)</span><span class="badge">Docker / K8s</span><span class="badge">GitLab CI/CD</span>
-    </div>
-    <div style="margin-top:1rem;display:flex;gap:.8rem;flex-wrap:wrap">
-      <a class="button" href="#contact">Demander un devis</a>
-      <a class="button ghost" href="#services">Voir les services</a>
-    </div>
-    <div class="kpis">
-      <div class="kpi"><strong>10+ ans</strong><span>ELK / Obs</span></div>
-      <div class="kpi"><strong>70+ projets</strong><span>audit → prod</span></div>
-      <div class="kpi"><strong>48% ↓</strong><span>incidents après refonte*</span></div>
-      <div class="kpi"><strong>24/7</strong><span>MCO & run</span></div>
-    </div>
-    <p class="sub">*ex. plateforme d’imagerie médicale : ILM hot/warm, snapshots S3, SSO/RBAC.</p>
-  </section>
-
-  <section id="services" class="grid cols-2">
-    <article class="card">
-      <h2>Conseil / Production</h2>
-      <p class="sub">Cadrage, architecture, implémentation, MCO.</p>
-      <ul class="list">
-        <li>Audit santé & recommandations (perf, coûts, sécurité)</li>
-        <li>ILM (rollover) & tiering (hot/warm/cold)</li>
-        <li>Ingestion Kafka→Logstash (ACKs, DLQ), Beats</li>
-        <li>Mappings / analyzers, relevancy & tuning requêtes</li>
-        <li>SSO / RBAC, TLS, snapshots S3</li>
-        <li>Upgrades 7→8, zéro‑downtime, runbooks</li>
-      </ul>
-      <div class="notice">Offres: ⚡ Kickstart 5j • 🛟 Rescue/Upgrade • 🎯 Perf Boost • 👩‍🏫 Coaching</div>
-    </article>
-    <article id="training" class="card">
-      <h2>Formations (2 à 4 jours)</h2>
-      <p class="sub">Intra / distanciel, ateliers pratiques, adaptés à votre prod.</p>
-      <ul class="list">
-        <li>Elasticsearch : requêtes, agrégations, mapping & indexation</li>
-        <li>Administration & exploitation (ILM, SLM, sécurité)</li>
-        <li>ELK / observabilité : logs, metrics, APM, alerting</li>
-        <li>Kibana : Lens, Canvas, dashboards, Spaces</li>
-      </ul>
-      <a class="button" href="#contact">Recevoir le programme</a>
-    </article>
-  </section>
-
-  <section id="tech" class="card" style="margin-top:1rem">
-    <h2>Technologies & pratiques</h2>
-    <div class="split">
-      <div>
-        <h3>ELK & ingestion</h3>
-        <ul class="list">
-          <li>Logstash (grok/dissect, enrich, ECS), Ingest Pipeline</li>
-          <li>Kafka KRaft, partitionnement, acks, retries, DLQ</li>
-          <li>Observabilité des flux, traçabilité, tests de schéma</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Ops & fiabilité</h3>
-        <ul class="list">
-          <li>HA, sizing, GC/heap, circuit breakers</li>
-          <li>ILM/rollover, time‑series (TSDS), routing</li>
-          <li>CI/CD: GitLab, Terraform/Ansible, tests automatisés</li>
-        </ul>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <div class="brand" data-i18n="brand">Frédéric Beaudeau</div>
+      <div class="header-actions">
+        <button class="header-action" id="infoTrigger" type="button">Info</button>
+        <button class="header-action" id="contactTrigger" type="button">Contact</button>
       </div>
     </div>
+  </header>
+  <section class="hero" data-i18n-group="hero">
+    <div class="hero__content">
+      <div class="hero__intro">
+        <h1 data-i18n="hero.title">Consultant Elasticsearch & ECE</h1>
+        <div class="hero__profile">
+          <img class="hero__portrait" src="images/moi2025_circle_clair2_NB.png" alt="Portrait de Frédéric Beaudeau" />
+          <ul class="hero__highlights" data-i18n-group="hero.highlights">
+            <li data-i18n="hero.highlight1">Expertise ELK depuis la version 6.8</li>
+            <li data-i18n="hero.highlight2">Design de clusters sur mesure pour répondre aux exigences d'infrastructure
+            </li>
+            <li data-i18n="hero.highlight3">Team player aguerri aux environnements agiles depuis 2016</li>
+            <li>Sensibilisé aux enjeux de la Production et astreintes</li>
+          </ul>
+        </div>
+      </div>
+      <p class="text-spacer">
+        Je suis Ingenieur de production orienté dans le bigdata spécialisé sur la stack <b><i>Elasticsearch</i></b> et
+        plateforme <b><i>Elastic Cloud Enterprise</i></b> on prem.
+        De nature ouverte et communicante j'aime travailler en équipe, mon expérience me permet aussi d'être autonome
+        lors d'incidents pendant les astreintes.
+      </p>
+    </div>
   </section>
+  <main>
+    <section class="strip strip--flat-white">
+      <div class="container flat-white">
+        <div>
+          <h2>Mon historique pro sur ELK</h2>
+          <p>Je travaille sur Elk depuis la <i><b>v6.8</b></i> ce qui me permet d'être à l'aise en <i><b>Build &
+                run</b></i>, j'ai travaillé sur des clusters à <b><i>forte volumétrie</i></b> avec des contraintes de
+            <b><i>haute disponnibilité</i></b>. J'ai eu l'occasion de construire et modifier des
+            <b><i>infrastructures</i></b> pour des <b><i>clusters mutualisés</i></b> dans le cadre d' offres de service
+            de <b><i>collecte de logs</i></b> mais aussi sur des clusters autonomes pour des <b><i>usages
+                métiers</i></b>.
+            <br></br>
+            Je réalise aussi des mises en place de <b><i>flux de données</i></b> allant de la production de messages
+            passant par une stack de rétention et transformation en finissant par l'ingestion dans elastic.
+            Une fois les données stockées dans Elastic, celles-ci sont accessibles et peuvent être exploitées, je mets
+            en place des <b><i>dashboards</i></b>, de l'<b><i>alerting</i></b>, des <b><i>watcher</i></b> ou des
+            <b><i>jobs de Machine learning</i></b> et bien d'autre fonctionnalités ...
+            Afin de gagner en robustesse et <b><i>qualité</i></b> des platefromes, je déploie et réalise les
+            <b><i>upgrades</i></b> en m'appuyant sur les briques d'<b><i>industrialisation</i></b>.
+            Pour la partie <b><i>gestion de projet</i></b>, je procède aux <b><i>études</i></b>, propositions de
+            <b><i>solutions</i></b>, aide à l'harbitrage et positionne les jalons, enfin les taches sont distribuées.
+            Je suis habitué à travailler dans un <b><i>cadre agile</i></b> pour structurer le temps dédiés au
+            <b><i>Build & Mco</i></b> et remonter les <b><i>points de blocage</i></b>.
+            Enfin j'ai coeur à <b><i>documenter</i></b> les projets, les modes opératoires, les incidents afin de
+            <b><i>capitaliser sur les plateformes</i></b>.
+            <br></br>
+            Vous l'aurez compris je suis un expert elasticsearch à tendance <b><i>Teamplayer</i></b> :)
+          </p>
+        </div>
+      </div>
+    </section>
 
-  <section id="about" class="grid cols-2" style="margin-top:1rem">
-    <article class="card">
-      <h2>À propos</h2>
-      <p>Je travaille sur des plateformes ELK à forte volumétrie (santé, industrie, IoT). J’interviens sur le <em>build</em> et le <em>run</em> avec une approche “production‑first”.</p>
-      <ul class="list">
-        <li>Environnements : on‑prem, cloud, Kubernetes</li>
-        <li>Langues : français / anglais</li>
-        <li>Régie ou forfait • NDA</li>
-      </ul>
-    </article>
-    <aside class="card">
-      <h2>Réalisations (exemples)</h2>
-      <ul class="list">
-        <li>Observabilité multi‑sites (santé) — incidents ↓48%, latence ↓60%</li>
-        <li>Indexation IoT (30B+ docs) — mapping & templates optimisés</li>
-        <li>Upgrades 7→8 — zero‑downtime, SSO/RBAC, S3 snapshots</li>
-      </ul>
-    </aside>
-  </section>
 
-  <section id="contact" class="grid cols-2" style="margin:1rem 0 2rem">
-    <form id="contact-form" class="card" method="POST" action="#">
-      <h2>Contact</h2>
-      <p class="sub">Décrivez votre contexte : volumétrie, environnement, objectifs. Réponse sous 24h ouvrées.</p>
-      <label>Nom<input name="name" required></label>
-      <label>Email<input type="email" name="email" required></label>
-      <label>Message<textarea name="message" rows="6" required></textarea></label>
-      <div class="success notice" style="display:none">Merci, c’est bien envoyé (simulation). Branchez Formspree pour l’envoi réel.</div>
-      <button class="button" type="submit">Envoyer</button>
-      <p class="sub">Ou écrivez‑moi à <strong>[votre.email@exemple.com]</strong> • LinkedIn : <strong>[lien]</strong></p>
-    </form>
-    <aside class="card">
-      <h2>Infos</h2>
-      <ul class="list">
-        <li>📍 Île‑de‑France • interventions Europe & remote</li>
-        <li>🗓 Disponibilités sur devis</li>
-        <li>🧾 Facturation : régie / forfait</li>
-        <li>🔐 Sécurité & conformité (TLS, SSO, RBAC)</li>
-      </ul>
-      <h3>Checklist projet</h3>
-      <ul class="list">
-        <li>EPS / volume / rétention</li>
-        <li>Environnement (on‑prem / cloud / K8s)</li>
-        <li>SLO & contraintes sécurité</li>
-        <li>Livrables (docs, runbooks, formation)</li>
-      </ul>
-    </aside>
-  </section>
-</main>
+    <section class="strip strip--flat-blue strip--flat-blue--no-top-right">
+      <div class="container">
+        <h2>Infra & Data</h2>
+        <p class="strip__subtitle">Architecture</p>
+        <p>Je suis en mesure de definir l'<b><i>architecture</i></b> de cluster et des <b><i>flux de données</i></b> selon les cas d'usage de
+          <b><i>search, ingestion, machine learning</i></b>... En fonction des ressources nécessaire on definira une architecture basé
+          sur du <b><i>On-prem</i></b> ou de la machines <b><i>virtuelle</i></b> dispatché sur plusieurs <b><i>data center</i></b> (résilience). La <b><i>restoration de
+          cluster/indices</i></b> sera réalisable via des briques de stoquage externes de type <b><i>S3, nfs ou autre techno</i></b>.</p>
+        <br>
+        <p class="strip__subtitle">Administration</p>
+        <p>J'assure les taches d'<b><i>administration</i></b> user,roles ,roles mapping, spaces, ilm, component templates ... des
+          clusters en les définisaant depuis l'<b><i>ui kibana</i></b> ou en consommant les <b><i>api elastic & kibana+(internal)</i></b> à
+          disposition.</p>
+        <br>
+        <p class="strip__subtitle">Cycle de vie de la donnée</p>
+        <p>J'aime lier un <b><i>contrat fort</i></b> avec la <b><i>qualité</i></b> de la donnée, après avoir <b><i>optimisé</i></b> le mapping je diminue l'aspect
+          <b><i>dynamique et coercitif</i></b>. Selon les besoins, la donnée sera stoquée dans des <b><i>indices</i></b> classiques ou des
+          <b><i>datastreams</i></b>. Bien <b><i>structurée</i></b>, la donnée sera pleinement exploitable via du <b><i>machine learning, des dashboards, etc</i></b>.
+        </p>
+        <p>La gestion des couts de la donnée couplée aux rééls besoins d'exploitation implique la mise en place de
+          <b><i>stratégie de stockage</i></b>. La donnée stoquée dans les indices migrera de <b><i>tiers</i></b> les plus rapides en stoquage jusqu'en <b><i>frozen</i></b> si
+          nécessaire avant suppression. Le déplacement des indices est couvert par les <b><i>ILM</i></b> pour simplifier et automatiser les tâches
+          d'administration.</p>
 
-<footer class="footer">
-  <div class="container">
-    <div>© 2025 Frédéric « Dobylove » Bodo • Consultant ELK</div>
-    <div><a href="#contact">Demander un devis</a></div>
+
+
+
+        <div class="flat-grid">
+          <div class="flat-grid__item">
+            <h3>Pilotage data</h3>
+            <p>Design d'indices et ILM adaptés à la volumétrie avec un socle d'observabilité temps réel.</p>
+          </div>
+ 
+          <div class="flat-grid__item">
+            <h3>Co-construction</h3>
+            <p>Animation d'ateliers produit avec les métiers pour aligner roadmap, qualité de service et innovation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="strip strip--plain strip--accelerator-white">
+      <div class="container">
+        <h2>Parlons cycle de vie</h2>
+        <p class="strip__subtitle">Cycle de vie de la stack</p>
+        <p>Elastic délivre à forte fréquence de nouvelles version avec des corrections de bugs mais aussi de nouvelles
+          fonctionnalités et une compatibilitée accrue. Les montées de versions sont découpées en différentes phases
+          préparatoires de Dev à Prod. Ces démarche sont nécessaires pour définir et valider le chemin critique de la
+          migration en fonction de la cohabitation des fonctionnalités du des clusters.
+          Le chemin critique sera defini selon différent critères (Alignement des versions + tests de non régressions de
+          l'ensemble des briques flux, mapping, dashbords,
+          machine learning ...) tout en définissant la recète de fin de migration.</p>
+        <br>
+        <p class="strip__subtitle">Industrialisation</p>
+        <p>L'automatisation des tâches est incontournable pour gagner du temps, execution avec un haut degré de
+          répétabilité tout en garantissant une meilleur qualité.
+          Au cours de mes expériences chez mes clients j'ai pu mettre en oeuvre et utiliser
+          les outils d'industrialisation courants ansible, ansible_tower, AAP, Jenkins, Xlr ...
+          Ces outils m'ont permis d'installer, mettre à jour des clusters entiers de toutes tailles ainsi que des
+          palteformes elastic cloud enterprise de dev et prod. </p>
+      </div>
+
+    </section>
+
+
+    <section class="strip strip--flat-blue strip--flat-blue--no-top-right" data-i18n-group="lifecycle">
+      <div class="container">
+        <h2 data-i18n="lifecycle.title">Gestion</h2>
+        <p class="strip__subtitle">Troubleshooting</p>
+        <p>L'activié de résolution de problème est incontournable depuis les environnements de dev jusqu'en prod. Il
+          sera alors nécessaire danalyser le problème tout en passant en revue les logs afin de remonter la piste et de
+          réaliser les gestes ou faire iàntervenir un sevice tiers.
+          J'ai pour reflexe de faire preuve de résilience et autonomie lors de périodes d'astreinte.</p>
+        <br>
+        <p class="strip__subtitle">Documentation</p>
+        <p>Une infrastructure est une somme de détails, il est capital de rédiger et de faire évoluer les procédures
+          pour consigner les gestes d'intervention. C'est aussi un outil formidable pour passer l'information lors de
+          l'intégration d'intervenant.
+          Aussi il ne faut surtotu pas passer à coté de la rédaction de post-mortem d'incidents majeur ayant un impact
+          sur la production et donc le service rendu.</p>
+        <br>
+        <p class="strip__subtitle">Communication</p>
+        <p>Les platefromes nécessitent une communication lors d'intervention technique ou d'une panne.
+          Les services tiers s'appuyant sur les clusters/plateforme sont informés et peuvent prendre les dispositions
+          nécessaires. </p>
+                  <ul class="pill-list">
+          <li data-i18n="industrialization.item1">Automatisation des déploiements</li>
+          <li data-i18n="industrialization.item2">Sécurisation des upgrades</li>
+          <li data-i18n="industrialization.item3">Observabilité et supervision proactive</li>
+        </ul>
+
+
+
+      </div>
+    </section>
+
+
+    <section class="strip strip--flat-white" data-i18n-group="metrics">
+      <div class="container">
+        <h2 data-i18n="metrics.title">10 ans d'expérience</h2>
+        <div class="metrics metrics--light">
+          <div class="metric">
+            <span class="metric__value" data-counter="10" data-i18n="metrics.value1">10</span>
+            <span class="metric__label" data-i18n="metrics.label1">années d'expertise Elasticsearch</span>
+          </div>
+          <div class="metric">
+            <span class="metric__value" data-counter="45" data-suffix="+" data-i18n="metrics.value2">45</span>
+            <span class="metric__label" data-i18n="metrics.label2">projets de clusters designés & optimisés</span>
+          </div>
+          <div class="metric">
+            <span class="metric__value" data-counter="24" data-suffix="+" data-i18n="metrics.value3">24</span>
+            <span class="metric__label" data-i18n="metrics.label3">astreintes opérationnelles gérées / an</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="strip strip--flat-blue strip--flat-blue--no-top-right" data-i18n-group="skills">
+      <div class="container">
+        <h2 data-i18n="skills.title">Compétences coeur</h2>
+        <div id="wordCloud" class="word-cloud" aria-label="Nuage de compétences techniques"></div>
+      </div>
+    </section>
+
+    
+  </main>
+
+  <div class="modal" id="contactModal" aria-hidden="true" role="dialog" aria-modal="true"
+    aria-labelledby="contactModalTitle">
+    <div class="modal__backdrop" data-modal-close></div>
+    <div class="modal__dialog">
+      <button class="modal__close" type="button" aria-label="Fermer la fenêtre de contact" data-modal-close>&times;</button>
+      <h2 class="modal__title" id="contactModalTitle">Me contacter</h2>
+      <p class="modal__intro">Je suis joignable sur Linkedin, vous y trouverez mes informations.</p>
+      <p class="modal__resource">
+        <span class="modal__resource-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="img" focusable="false">
+            <path
+              d="M20.451 20.451h-3.554v-5.569c0-1.329-.027-3.039-1.852-3.039-1.853 0-2.136 1.447-2.136 2.943v5.665H9.356V9h3.414v1.561h.047c.476-.9 1.637-1.852 3.368-1.852 3.603 0 4.268 2.372 4.268 5.457v6.285zM5.337 7.433a2.062 2.062 0 110-4.124 2.062 2.062 0 010 4.124zm1.779 13.018H3.555V9h3.561v11.451zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.226.792 24 1.771 24h20.451C23.2 24 24 23.226 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z">
+            </path>
+          </svg>
+        </span>
+        <a class="modal__resource-link" href="https://www.linkedin.com/in/frederic-beaudeau-5a6434110/" target="_blank"
+          rel="noopener noreferrer">
+          Frédéric Beaudeau
+        </a>
+      </p>
+    </div>
   </div>
-</footer>
 
-<script src="assets/script.js" defer></script>
+  <div class="modal" id="infoModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="infoModalTitle">
+    <div class="modal__backdrop" data-modal-close></div>
+    <div class="modal__dialog">
+      <button class="modal__close" type="button" aria-label="Fermer la fenêtre d'informations" data-modal-close>&times;</button>
+      <h2 class="modal__title" id="infoModalTitle">Expérience pro</h2>
+      <p class="modal__intro">Voici mon CV avec mon parcours pro.</p>
+      <p class="modal__resource">
+        <span class="modal__resource-icon modal__resource-icon--pdf" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="img" focusable="false">
+            <path
+              d="M6 2h9l5 5v13a2 2 0 01-2 2H6a2 2 0 01-2-2V4a2 2 0 012-2zm8 7h3l-3-3v3zm-6 2c1.306 0 2.417.835 2.831 2H12v2h-1.169A3 3 0 118 11zm0 2a1 1 0 100 2h1v-1a1 1 0 00-1-1zm5-2h3a2 2 0 012 2v2a2 2 0 01-2 2h-3V11zm2 2v2h1a1 1 0 000-2h-1z">
+            </path>
+          </svg>
+        </span>
+        <a class="modal__resource-link" href="cv/FredericBEAUDEAU_consultant_elk_09_2025_00_anony.pdf" target="_blank"
+          rel="noopener noreferrer">
+          Télécharger le CV (PDF)
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer__content">
+      <div class="footer__brand">© 2025 Frédéric Beaudeau</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
