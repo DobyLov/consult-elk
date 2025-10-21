@@ -98,10 +98,6 @@
           <b><i>stratégie de stockage</i></b>. La donnée stoquée dans les indices migrera de <b><i>tiers</i></b> les plus rapides en stoquage jusqu'en <b><i>frozen</i></b> si
           nécessaire avant suppression. Le déplacement des indices est couvert par les <b><i>ILM</i></b> pour simplifier et automatiser les tâches
           d'administration.</p>
-
-
-
-
         <div class="flat-grid">
           <div class="flat-grid__item">
             <h3>Pilotage data</h3>
@@ -109,8 +105,12 @@
           </div>
  
           <div class="flat-grid__item">
-            <h3>Co-construction</h3>
-            <p>Animation d'ateliers produit avec les métiers pour aligner roadmap, qualité de service et innovation.</p>
+            <h3>Donnée nettoyée</h3>
+            <p>Qualification de la donnée pour une exploitation fiable de jobs de Machine learning</p>
+          </div>
+          <div class="flat-grid__item">
+            <h3>Dashboarding</h3>
+            <p>Mise en place de dashboards d'exploitation</p>
           </div>
         </div>
       </div>
@@ -121,53 +121,61 @@
         <h2>Parlons cycle de vie</h2>
         <p class="strip__subtitle">Cycle de vie de la stack</p>
         <p>Elastic délivre à forte fréquence de nouvelles version avec des corrections de bugs mais aussi de nouvelles
-          fonctionnalités et une compatibilitée accrue. Les montées de versions sont découpées en différentes phases
-          préparatoires de Dev à Prod. Ces démarche sont nécessaires pour définir et valider le chemin critique de la
+          fonctionnalités et une compatibilitée accrue. Les montées de versions sont des projets sensibles, elle se doivent d'être découpées en différentes phases
+          <b><i>préparatoires</i></b> par environnement de Dev à Prod. Ces démarche sont nécessaires pour <b><i>définir et valider le chemin critique</i></b> de la
           migration en fonction de la cohabitation des fonctionnalités du des clusters.
-          Le chemin critique sera defini selon différent critères (Alignement des versions + tests de non régressions de
+          La migration sera jalonnée selon différents critères (alignement des versions + tests de non régressions de
           l'ensemble des briques flux, mapping, dashbords,
-          machine learning ...) tout en définissant la recète de fin de migration.</p>
+          machine learning ...) <b><i>tout en définissant la recète de fin de migration</i></b>.</p>
         <br>
         <p class="strip__subtitle">Industrialisation</p>
-        <p>L'automatisation des tâches est incontournable pour gagner du temps, execution avec un haut degré de
-          répétabilité tout en garantissant une meilleur qualité.
+        <p><b><i>L'automatisation des tâches</i></b> est incontournable pour gagner en <b><i>qualité</i></b> et en execution avec un <b><i>haut degré de
+          répétabilité</i></b>.
           Au cours de mes expériences chez mes clients j'ai pu mettre en oeuvre et utiliser
-          les outils d'industrialisation courants ansible, ansible_tower, AAP, Jenkins, Xlr ...
-          Ces outils m'ont permis d'installer, mettre à jour des clusters entiers de toutes tailles ainsi que des
-          palteformes elastic cloud enterprise de dev et prod. </p>
+          les outils d'industrialisation courants <b><i>ansible, ansible_tower, AAP, Jenkins, Xlr ...</i></b>
+          Ces outils m'ont permis <b><i>d'installer, mettre à jour des clusters entiers de toutes tailles</i></b> ainsi que des
+          <b><i>palteformes Elastic Cloud Enterprise</i></b> de dev à prod. </p>
+                <div class="flat-grid">
+          <div class="flat-grid__item">
+            <h3>Montée de version</h3>
+            <p>Evaluation des fonctionnalités et dépendances pour identifier les points critiques pour baliser la migration.</p>
+          </div>
+          <div class="flat-grid__item">
+            <h3>Validation</h3>
+            <p>Elaborer un document de recète pour valider les migrations.</p>
+          </div>
+          <div class="flat-grid__item">
+            <h3>Automation</h3>
+            <p>Mise en place et migration d'outils d'industrialisation des plateforme ECE et ELK.</p>
+          </div>
+        </div>  
       </div>
-
     </section>
-
 
     <section class="strip strip--flat-blue strip--flat-blue--no-top-right" data-i18n-group="lifecycle">
       <div class="container">
         <h2 data-i18n="lifecycle.title">Gestion</h2>
         <p class="strip__subtitle">Troubleshooting</p>
-        <p>L'activié de résolution de problème est incontournable depuis les environnements de dev jusqu'en prod. Il
-          sera alors nécessaire danalyser le problème tout en passant en revue les logs afin de remonter la piste et de
-          réaliser les gestes ou faire iàntervenir un sevice tiers.
-          J'ai pour reflexe de faire preuve de résilience et autonomie lors de périodes d'astreinte.</p>
+        <p>L'activié de <b><i>résolution de problème</i></b> est incontournable depuis les environnements de dev jusqu'en prod. Il
+          sera alors nécessaire <b><i>d'analyser le problème</i></b> en passant en <b><i>revue les logs</i></b>et remonter la piste pour enfin <b><i>réaliser les gestesde correction</i></b> directement ou faire intervenir un sevice tiers.
+          J'ai pour <b><i>reflexe</i></b> de faire preuve de <b><i>résilience et autonomie</i></b> lors de périodes d'<b><i>astreinte</i></b>.</p>
         <br>
         <p class="strip__subtitle">Documentation</p>
-        <p>Une infrastructure est une somme de détails, il est capital de rédiger et de faire évoluer les procédures
-          pour consigner les gestes d'intervention. C'est aussi un outil formidable pour passer l'information lors de
-          l'intégration d'intervenant.
-          Aussi il ne faut surtotu pas passer à coté de la rédaction de post-mortem d'incidents majeur ayant un impact
-          sur la production et donc le service rendu.</p>
+        <p>Une infrastructure est une <b><i>somme de détails</i></b>, il est capital de <b><i>rédiger</i></b> et de faire <b><i>évoluer les procédures</i></b>
+          pour <b><i>consigner les gestes d'intervention</i></b>. La documentation est un outil idéal pour <b><i>passer l'information</i></b> lors de
+          l'<b><i>intégration d'intervenant</i></b>.
+          Aussi la rédaction de <b><i>post-mortem</i></b> est incontournable afin de <b><i>consigner les incidents et correctif</i></b> majeurs ayant eu un <b><i>impact</i></b>
+          sur la <b><i>production avec un impact sur le service rendu</i></b>. </p>
         <br>
         <p class="strip__subtitle">Communication</p>
-        <p>Les platefromes nécessitent une communication lors d'intervention technique ou d'une panne.
-          Les services tiers s'appuyant sur les clusters/plateforme sont informés et peuvent prendre les dispositions
+        <p>La gestion de platefomres implique une communication exemplaire lors d'intervention technique ou d'une panne.
+          Les services tiers s'appuyant sur les clusters/plateforme sont informés et peuvent prendre de leurs coté les dispositions
           nécessaires. </p>
-                  <ul class="pill-list">
+        <ul class="pill-list">
           <li data-i18n="industrialization.item1">Automatisation des déploiements</li>
           <li data-i18n="industrialization.item2">Sécurisation des upgrades</li>
           <li data-i18n="industrialization.item3">Observabilité et supervision proactive</li>
         </ul>
-
-
-
       </div>
     </section>
 
@@ -248,7 +256,7 @@
 
   <footer class="site-footer">
     <div class="container footer__content">
-      <div class="footer__brand">© 2025 Frédéric Beaudeau</div>
+      <div class="footer__brand">©2025 Frédéric Beaudeau gpt/codex</div>
     </div>
   </footer>
 
