@@ -48,7 +48,7 @@
         <div>
           <h2>Mon historique pro sur ELK</h2>
           <p>Je travaille sur Elk depuis la <i><b>v6.8</b></i> ce qui me permet d'être à l'aise en <i><b>Build &
-                run</b></i>, j'ai travaillé sur des clusters à <b><i>forte volumétrie</i></b> avec des contraintes de
+                Run</b></i>, j'ai travaillé sur des clusters à <b><i>forte volumétrie</i></b> avec des contraintes de
             <b><i>haute disponnibilité</i></b>. J'ai eu l'occasion de construire et modifier des
             <b><i>infrastructures</i></b> pour des <b><i>clusters mutualisés</i></b> dans le cadre d' offres de service
             de <b><i>collecte de logs</i></b> mais aussi sur des clusters autonomes pour des <b><i>usages
@@ -80,12 +80,12 @@
         <h2>Infra & Data</h2>
         <p class="strip__subtitle">Architecture</p>
         <p>Je suis en mesure de definir l'<b><i>architecture</i></b> de cluster et des <b><i>flux de données</i></b> selon les cas d'usage de
-          <b><i>search, ingestion, machine learning</i></b>... En fonction des ressources nécessaire on definira une architecture basé
-          sur du <b><i>On-prem</i></b> ou de la machines <b><i>virtuelle</i></b> dispatché sur plusieurs <b><i>data center</i></b> (résilience). La <b><i>restoration de
+          <b><i>search, ingestion, machine learning</i></b>... En fonction des ressources nécessaires on definira une architecture basée
+          sur du <b><i>On-prem</i></b> ou de la machines <b><i>virtuelle</i></b> sans ommetre de dispatcher sur plusieurs <b><i>data center</i></b> (résilience). La <b><i>restoration de
           cluster/indices</i></b> sera réalisable via des briques de stoquage externes de type <b><i>S3, nfs ou autre techno</i></b>.</p>
         <br>
         <p class="strip__subtitle">Administration</p>
-        <p>J'assure les taches d'<b><i>administration</i></b> user,roles ,roles mapping, spaces, ilm, component templates ... des
+        <p>J'assure les tâches d'<b><i>administration</i></b> user, roles ,roles mapping, spaces, ilm, component templates ... des
           clusters en les définisaant depuis l'<b><i>ui kibana</i></b> ou en consommant les <b><i>api elastic & kibana+(internal)</i></b> à
           disposition.</p>
         <br>
@@ -157,8 +157,8 @@
         <h2 data-i18n="lifecycle.title">Gestion</h2>
         <p class="strip__subtitle">Troubleshooting</p>
         <p>L'activié de <b><i>résolution de problème</i></b> est incontournable depuis les environnements de dev jusqu'en prod. Il
-          sera alors nécessaire <b><i>d'analyser le problème</i></b> en passant en <b><i>revue les logs</i></b>et remonter la piste pour enfin <b><i>réaliser les gestesde correction</i></b> directement ou faire intervenir un sevice tiers.
-          J'ai pour <b><i>reflexe</i></b> de faire preuve de <b><i>résilience et autonomie</i></b> lors de périodes d'<b><i>astreinte</i></b>.</p>
+          sera alors nécessaire <b><i>d'analyser le problème</i></b> en passant en <b><i>revue les logs</i></b>. Ainsi on sera en mesure de remonter la piste pour <b><i>réaliser les gestes correctifs</i></b> ou faire intervenir un sevice tiers.
+          J'ai pour <b><i>reflexe</i></b> de faire preuve de <b><i>résilience et autonomie</i></b> au quotidien et encore plus lors de périodes d'<b><i>astreinte</i></b>.</p>
         <br>
         <p class="strip__subtitle">Documentation</p>
         <p>Une infrastructure est une <b><i>somme de détails</i></b>, il est capital de <b><i>rédiger</i></b> et de faire <b><i>évoluer les procédures</i></b>
@@ -171,21 +171,30 @@
         <p>La gestion de platefomres implique une communication exemplaire lors d'intervention technique ou d'une panne.
           Les services tiers s'appuyant sur les clusters/plateforme sont informés et peuvent prendre de leurs coté les dispositions
           nécessaires. </p>
-        <ul class="pill-list">
-          <li data-i18n="industrialization.item1">Automatisation des déploiements</li>
-          <li data-i18n="industrialization.item2">Sécurisation des upgrades</li>
-          <li data-i18n="industrialization.item3">Observabilité et supervision proactive</li>
-        </ul>
+          <div class="flat-grid">
+            <div class="flat-grid__item">
+              <h3>Troubleshooting</h3>
+              <p>Etude des logs depuis le cluster de monitoring et ou directement sur les noeuds/instances.</p>
+            </div>
+            <div class="flat-grid__item">
+              <h3>Doc doc doc</h3>
+              <p>Toujours instruire les documentations, pour historique, l'onborading des arrivants et llm / rag.</p>
+            </div>
+            <div class="flat-grid__item">
+              <h3>Informer</h3>
+              <p>La qualité perçue des plateformes dépend fortement de la communication.</p>
+            </div>
+        </div>
       </div>
     </section>
 
 
     <section class="strip strip--flat-white" data-i18n-group="metrics">
       <div class="container">
-        <h2 data-i18n="metrics.title">10 ans d'expérience</h2>
+        <h2 data-i18n="metrics.title">Coté expérience</h2>
         <div class="metrics metrics--light">
           <div class="metric">
-            <span class="metric__value" data-counter="10" data-i18n="metrics.value1">10</span>
+            <span class="metric__value" data-counter="6" data-i18n="metrics.value1">10</span>
             <span class="metric__label" data-i18n="metrics.label1">années d'expertise Elasticsearch</span>
           </div>
           <div class="metric">
@@ -201,7 +210,7 @@
     </section>
     <section class="strip strip--flat-blue strip--flat-blue--no-top-right" data-i18n-group="skills">
       <div class="container">
-        <h2 data-i18n="skills.title">Compétences coeur</h2>
+        <h2 data-i18n="skills.title">Compétences techniques</h2>
         <div id="wordCloud" class="word-cloud" aria-label="Nuage de compétences techniques"></div>
       </div>
     </section>
