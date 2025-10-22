@@ -1,0 +1,13 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Frédéric Beaudeau",
+  "jobTitle": "Consultant ELK / Elasticsearch",
+  "url": "https://www.fredericbeaudeau.fr",
+  "sameAs": [
+    "https://www.linkedin.com/in/frederic-beaudeau-5a6434110/",
+    "https://github.com/DobyLov"
+  ]
+}
+</script>
