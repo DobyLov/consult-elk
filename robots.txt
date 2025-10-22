@@ -5,6 +5,7 @@ Sitemap: https://fredericbeaudeau.com/sitemap.xml
 Sitemap: https://www.fredericbeaudeau.com/sitemap.xml
 Crawl-delay: 86400
 Allow: /
+Disallow: /.gitignore
 Disallow: /scripts.js
 Disallow: /style.css
 Disallow: /README.md
@@ -12,3 +13,5 @@ Disallow: /cv/
 Disallow: /fonts/
 Disallow: /icons/
 Disallow: /images/
+Disallow: /.git
+Disallow: /.well-known
