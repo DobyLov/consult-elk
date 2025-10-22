@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>Page introuvable | Frédéric Beaudeau | Consultant ELK</title>
+  <meta name="description"
+    content="Erreur 404 - La page demandée est introuvable. Retrouvez toutes les informations sur Frédéric Beaudeau, consultant Elasticsearch & Elastic Cloud Enterprise." />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <div class="brand">Frédéric Beaudeau</div>
+      <div class="header-actions">
+        <button class="header-action" id="infoTrigger" type="button">Info</button>
+        <button class="header-action" id="contactTrigger" type="button">Contact</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero--not-found">
+      <div class="hero__content">
+        <div class="hero__intro">
+          <p class="hero__status">Erreur 404</p>
+          <h1>La page que vous recherchez n'existe plus ou a été déplacée.</h1>
+          <p>Pas de panique&nbsp;! Je vous invite à revenir vers les contenus principaux de mon site pour découvrir mon
+            expertise Elasticsearch, Elastic Cloud Enterprise et observabilité.</p>
+        </div>
+        <div class="hero__actions">
+          <a class="btn" href="index.html">Retour à l'accueil</a>
+          <button class="btn btn--secondary" id="ctaContact" type="button">Me contacter</button>
+        </div>
+        <p class="hero__note">Si vous pensez qu'il s'agit d'une erreur, n'hésitez pas à me le signaler.</p>
+      </div>
+    </section>
+
+    <section class="strip strip--flat-white">
+      <div class="container">
+        <h2>Continuer votre navigation</h2>
+        <div class="flat-grid">
+          <div class="flat-grid__item">
+            <h3>Découvrir mon profil</h3>
+            <p>Retournez sur la page d'accueil pour explorer mon parcours, mes expertises et mes réalisations.</p>
+            <a class="btn btn--secondary" href="index.html">Page d'accueil</a>
+          </div>
+          <div class="flat-grid__item">
+            <h3>Consulter mon CV</h3>
+            <p>Téléchargez mon CV détaillé pour obtenir une vue complète de mon expérience en environnement ELK.</p>
+            <a class="btn btn--secondary" href="cv/FredericBEAUDEAU_consultant_elk_09_2025_00_anony.pdf" target="_blank"
+              rel="noopener noreferrer">Télécharger le CV</a>
+          </div>
+          <div class="flat-grid__item">
+            <h3>Entrer en contact</h3>
+            <p>Besoin d'un consultant ELK&nbsp;? Contactez-moi sur LinkedIn pour échanger sur vos enjeux.</p>
+            <a class="btn" href="https://www.linkedin.com/in/frederic-beaudeau-5a6434110/" target="_blank"
+              rel="noopener noreferrer">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="contactModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="contactModalTitle">
+    <div class="modal__backdrop" data-modal-close></div>
+    <div class="modal__dialog">
+      <button class="modal__close" type="button" aria-label="Fermer la fenêtre de contact" data-modal-close>&times;</button>
+      <h2 class="modal__title" id="contactModalTitle">Me contacter</h2>
+      <p class="modal__intro">Je suis joignable sur Linkedin, vous y trouverez mes informations.</p>
+      <p class="modal__resource">
+        <span class="modal__resource-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="img" focusable="false">
+            <path
+              d="M20.451 20.451h-3.554v-5.569c0-1.329-.027-3.039-1.852-3.039-1.853 0-2.136 1.447-2.136 2.943v5.665H9.356V9h3.414v1.561h.047c.476-.9 1.637-1.852 3.368-1.852 3.603 0 4.268 2.372 4.268 5.457v6.285zM5.337 7.433a2.062 2.062 0 110-4.124 2.062 2.062 0 010 4.124zm1.779 13.018H3.555V9h3.561v11.451zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.226.792 24 1.771 24h20.451C23.2 24 24 23.226 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z">
+            </path>
+          </svg>
+        </span>
+        <a class="modal__resource-link" href="https://www.linkedin.com/in/frederic-beaudeau-5a6434110/" target="_blank"
+          rel="noopener noreferrer">
+          Frédéric Beaudeau
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <div class="modal" id="infoModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="infoModalTitle">
+    <div class="modal__backdrop" data-modal-close></div>
+    <div class="modal__dialog">
+      <button class="modal__close" type="button" aria-label="Fermer la fenêtre d'informations" data-modal-close>&times;</button>
+      <h2 class="modal__title" id="infoModalTitle">Expérience pro</h2>
+      <p class="modal__intro">Voici mon CV avec mon parcours pro.</p>
+      <p class="modal__resource">
+        <span class="modal__resource-icon modal__resource-icon--pdf" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="img" focusable="false">
+            <path
+              d="M6 2h9l5 5v13a2 2 0 01-2 2H6a2 2 0 01-2-2V4a2 2 0 012-2zm8 7h3l-3-3v3zm-6 2c1.306 0 2.417.835 2.831 2H12v2h-1.169A3 3 0 118 11zm0 2a1 1 0 100 2h1v-1a1 1 0 00-1-1zm5-2h3a2 2 0 012 2v2a2 2 0 01-2 2h-3V11zm2 2v2h1a1 1 0 000-2h-1z">
+            </path>
+          </svg>
+        </span>
+        <a class="modal__resource-link" href="cv/FredericBEAUDEAU_consultant_elk_09_2025_00_anony.pdf" target="_blank"
+          rel="noopener noreferrer">
+          Télécharger le CV (PDF)
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer__content">
+      <div class="footer__brand">©2025 Frédéric Beaudeau gpt/codex</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
